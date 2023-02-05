@@ -1,0 +1,136 @@
+:root{
+  --red: #8c0005;
+  --orange: #b52c00;
+
+  --gray: #444444;
+  --graySecondary: #626262;
+  --redBackground: #A63B3F;
+  --text: #fcf7d1;
+  --hoverColor: #a9a17a;
+}
+
+#about-me {
+  width: 100%;
+  background-color: var(--graySecondary);
+}
+
+.ajustader-2 {
+  padding: 144px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 67px;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 45px;
+  color: var(--text);
+}
+
+.circle {
+  position: absolute;
+}
+
+.avatar {
+  width: 323px;
+  height: 368px;
+  position: relative;
+  cursor: pointer;
+  transition: ease 1s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+@keyframes java {
+  0% {
+      bottom: 0;
+      left: 250px;
+  }
+  100% {
+      bottom: 0;
+      left: 50px;
+  }
+}
+
+@keyframes react {
+  0% {
+      bottom: 0;
+      left: 50px;
+  }
+  100% {
+      bottom: 0;
+      left: 250px;
+  }
+}
+
+.java {
+  bottom: 0;
+  left: 0;
+  animation: java 3s infinite linear alternate-reverse ;
+}
+
+.firebase {
+  bottom: 0;
+  left: 150px;
+}
+
+.react {
+  bottom: 0;
+  left: 300px;
+  animation: react 3s infinite linear alternate-reverse;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me p {
+  text-indent: 30px;
+  font-size: 20px;
+  max-width: 609.25px;
+  color: var(--text);
+}
+
+@media (max-width:1200px) {
+  .ajustader-2 {
+      justify-content: center;
+      text-align: center;
+  }
+
+  .avatar {
+      margin-right: 60px;
+  }
+
+  h2 {
+      font-size: 30px;
+  }
+
+  .ajustader-2 p {
+      font-size: 15px;
+  }
+  .about-me p {
+      text-indent: 0;
+  }
+}
+
+@media(max-width:950px){
+
+  .circle {
+      display: none;
+  }
+  .ajustader-2 {
+      max-width: 350px;
+      padding: 70px 30px;
+  }
+
+  .avatar {
+      margin-right: 0;
+  }
+
+}

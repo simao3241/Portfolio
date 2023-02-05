@@ -1,0 +1,19 @@
+:root{
+  --gray:  #444444 ;
+  --text:  #fcf7d1 ;
+  --secondText:  #a9a17a ;
+  --orange:  #b52c00 ;
+  --red:  #8c0005 ;
+}
+
+
+:root{
+  --red: #8c0005;
+  --orange: #b52c00;
+
+  --gray: #444444;
+  --graySecondary: #626262;
+  --redBackground: #A63B3F;
+  --text: #fcf7d1;
+  --hoverColor: #a9a17a;
+}

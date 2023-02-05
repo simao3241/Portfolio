@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | simao3241</title>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Home Page -->
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <!-- About Me -->
+    <link rel="stylesheet" href="./assets/css/aboutme.css">
+    <!-- Projects -->
+    <link rel="stylesheet" href="./assets/css/projects.css">
+    <!-- Habilities -->
+    <link rel="stylesheet" href="./assets/css/habilities.css">
+    <!-- Footer -->
+    <link rel="stylesheet" href="./assets/css/footer.css">
+  </head>
+  
+  <body onload="typeWriter(fName);">
+    <div>
+      <!-- Menu -->
+      <input
+        id="close-menu"
+        class="close-menu"
+        type="checkbox"
+        aria-label="close-menu"
+        role="button"
+      />
+      <label
+        class="close-menu-label"
+        for="close-menu"
+        title="close menu"
+      ></label>
+      <div class="nav-bar">
+        <div class="menu-center">
+          <div class="nav-bar-container centralizer">
+            <div class="logo left-col">
+              <a href="index.html"
+                ><img src="./assets/images/logo.png" alt="logo"
+              /></a>
+            </div>
+            <nav class="right-col">
+              <ul onclick="getElementById('close-menu').checked=false;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#habilities">Habilities</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Page -->
+      <section id="home">
+        <div class="height-ajust">
+          <div class="home centralizer">
+            <div class="ajuster organizer">
+              <div class="presentation">
+                <p class="description">
+                  Hi, my name is <br />
+                  <span style="display: inline" id="my-name"
+                    >Simão Jorge.</span
+                  >
+                  <br />
+                  <!-- Desenvolvedor Full Stack -->
+                  Software Development
+                </p>
+                <br />
+                <div class="linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/simao-jorge/"
+                    target="_blank"
+                    class="link"
+                    >Linkedin</a
+                  >
+                </div>
+              </div>
+              <div class="picture">
+                <img
+                  class="picture2"
+                  src="./assets/images/SkyChattingLogo.png"
+                  alt="Me-in-picture"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about-me">
+        <div class="centralizer">
+          <div class="ajustader-2">
+            <div class="avatar">
+              <img
+                class="picture-bg"
+                src="./assets/images/avatar.png"
+                alt="avatar"
+              />
+              <div class="circle-container">
+                <img
+                  class="circle react"
+                  src="./assets/images/react-circle.png"
+                  alt="react"
+                />
+                <img
+                  class="circle java"
+                  src="./assets/images/java-circle.png"
+                  alt="java"
+                />
+                <img
+                  class="circle firebase"
+                  src="./assets/images/firebase-circle.png"
+                  alt="firebase"
+                />
+              </div>
+            </div>
+            <div class="about-me">
+              <h2>About Me</h2>
+              <br />
+              <p>
+                I'm a Portuguese developer and student trying to make my own social network. 
+                You probably won't see many repositories because they are almost all private, 
+                but I promise I have good projects developed.
+              </p>
+              <br />
+              <p>
+                Now, I'm learning React JS, Java and FireBase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="centralizer projects">
+          <h2 class="project">Projects</h2>
+          <div class="projects-itens">
+            <div class="pro">
+              <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro">
+              <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro">
+              <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro hidden">
+              <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro hidden">
+              <div class="breve"><p>COMING SOON</p></div>
+            </div>
+            <div class="pro hidden">
+              <div class="breve"><p>COMING SOON</p></div>
+            </div>
+          </div>
+
+          <div class="github-link">
+            <button onclick="viewMore()" id="btnViewMore">View More</button>
+            <a
+              href="https://github.com/simao3241?tab=repositories"
+              target="_blank"
+              >Github repositories</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilities -->
+      <section id="habilities">
+        <div class="centralizer">
+          <div class="habilities-pd">
+            <h2 class="project">Habilities</h2>
+            <div class="skills-description">
+              <div class="container-skills">
+                <div class="skill-box skill1 html-skill">
+                  <img
+                    class="icons-habilities"
+                    src="./assets/images/html.svg"
+                    alt="html-icon"
+                  />
+                </div>
+                <div class="skill-box skill2 css-skill">
+                  <img
+                    class="icons-habilities"
+                    src="./assets/images/css.svg"
+                    alt="css-icon"
+                  />
+                </div>
+                <div class="skill-box skill3 js-skill">
+                  <img
+                    class="icons-habilities"
+                    src="./assets/images/js.svg"
+                    alt="js-icon"
+                  />
+                </div>
+                <div class="skill-box skill4"> 
+                  <img 
+                  class="icons-habilities" 
+                  src="./assets/images/typescript.svg" 
+                  alt="typescript-icon"
+                  /> 
+                </div>
+                <div class="skill-box skill5"> 
+                  <img 
+                  class="icons-habilities" 
+                  src="./assets/images/java.svg" 
+                  alt="java-icon"
+                  /> 
+                </div>
+                <div class="skill-box skill6"> 
+                  <img 
+                  class="icons-habilities" 
+                  src="./assets/images/firebase.svg" 
+                  alt="firebase-icon"
+                  /> 
+                </div> 
+                <div class="skill-box skill7">
+                  <img
+                    class="icons-habilities"
+                    src="./assets/images/react.svg"
+                    alt="react-icon"
+                  />
+                </div>
+                <div class="skill-box skill8"> 
+                  <img 
+                  class="icons-habilities" 
+                  src="./assets/images/node.svg" 
+                  alt="node-icon"
+                  /> 
+                </div>
+                <div class="skill-box skill9"> 
+                  <img 
+                  class="icons-habilities" 
+                  src="./assets/images/csharp.svg" 
+                  alt="csharp-icon"
+                  /> 
+                </div>
+                <div class="skill-box skill10 git-skill">
+                  <img
+                    class="icons-habilities"
+                    src="./assets/images/git.svg"
+                    alt="git-icon"
+                  />
+                </div>
+                <div class="skill-box skill11 github-skill">
+                  <img
+                    class="icons-habilities"
+                    src="./assets/images/github.svg"
+                    alt="github-icon"
+                  />
+                </div>
+              </div>
+              <div class="container-description">
+                <p class="text-description">
+                  /* Mouse over a skill to read the description */
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="contact-credits">
+            Contact: a2021020@alunos.sefo.pt <br />
+            Developed by Simão Jorge <br />
+          </div>
+          <div class="icons">
+            <div class="links links1">
+              <a href="https://github.com/simao3241" target="_blank">
+                <img
+                  class="alpha"
+                  src="./assets/images/githubff.svg"
+                  alt="github-icon"
+                />
+              </a>
+            </div>
+            <div class="links links2">
+              <a
+                href="https://www.linkedin.com/in/simao-jorge/"
+                target="_blank"
+              >
+                <img
+                  class="alpha"
+                  src="./assets/images/linkedinff.svg"
+                  alt="github-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/scrollReveal.js"></script>
+    <script src="./assets/js/habilities.js"></script>
+  </body>
+</html>
